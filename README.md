@@ -3,7 +3,7 @@ directory structure layout using python
 
 Installation:
 ```
-> git clone "https://github.com/cipherDOT/nerdtree_project"
+$ git clone "https://github.com/cipherDOT/nerdtree_project"
 ```
 
 <h1>Configuration</h1>
