@@ -12,14 +12,16 @@ $ git clone "https://github.com/cipherDOT/nerdtree_project"
 - Add the nerdtree folder to the ```PATH``` variable under Environmental Variables.
 - Add the path to ```tree.py``` in nerdtree.bat
 
-<h1>Commands</h1>:
+<h1>Commands:</h1>
 ```
 $ nerdtree -v
 1.0.0
-
+```
+```
 $ nerdtree -web
 https://github.com/cipherDOT/nerdtree_project
-
+```
+```
 $ nerdtree -help 
 "-v : shows the current version of nerdtree
 
@@ -27,6 +29,7 @@ $ nerdtree -help
  
  -help : help command
 ```
+
 <h1>Examples:</h1>
 
 ```
