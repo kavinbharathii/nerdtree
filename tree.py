@@ -2,13 +2,7 @@
 # --------------------------------------------imported libraries---------------------------------------------- #
 import sys
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
-# ---------------------------------------------config variables----------------------------------------------- #
-
-dev = os.getenv("DEV")
-version = os.getenv("VERSION")
+from config import version, dev, web, help
 
 # --------------------------------getting the sys argument to provide the path-------------------------------- #
 
@@ -40,8 +34,12 @@ def nerdtree(path=os.getcwd(), count=0):
 if arg_1 != None:
     if arg_1 == '-v':
         print(f"{version}")
-    elif arg_1 == '-auth':
+    elif arg_1 == '-dev':
         print(f"{dev}")
+    elif arg_1 == "-help":
+        print(f"{help}")
+    elif arg_1 == "-web":
+        print(f"{web}")
     else:
         nerdtree(arg_1)
 else:
