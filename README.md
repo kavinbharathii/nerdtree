@@ -1,7 +1,7 @@
 # nerdtree_project
-directory structure layout using python
+shell command to show the directory structure layout
 
-Installation:
+<h1>Installation</h1>:
 ```
 $ git clone "https://github.com/cipherDOT/nerdtree_project"
 ```
@@ -23,6 +23,6 @@ Or, you can just enter nerdtree to show the directory layout of the current work
 $ nerdtree
 ```
 
-The result:
+<h1>The Result</h1>:
 
 ![](images/nerdtree%20demo.png)
