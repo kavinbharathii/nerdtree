@@ -10,6 +10,7 @@ $ pip install -r requirements.txt
 <h1>Configuration</h1>
 
 - Add the nerdtree folder to the ```PATH``` variable under Environmental Variables.
+- Add the path ```tree.py``` in nerdtree.bat
 
 <h1>Examples:</h1>
 
