@@ -15,16 +15,6 @@ $ git clone "https://github.com/cipherDOT/nerdtree_project"
 <h1>Commands:</h1>
 
 ```
-$ nerdtree -v
-1.0.0
-```
-
-```
-$ nerdtree -web
-https://github.com/cipherDOT/nerdtree_project
-```
-
-```
 $ nerdtree -help 
 "-v : shows the current version of nerdtree
 
