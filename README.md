@@ -9,7 +9,7 @@ $ git clone "https://github.com/cipherDOT/nerdtree_project"
 <h1>Configuration</h1>
 
 - Add the nerdtree folder to the ```PATH``` variable under Environmental Variables.
-- Add the path ```tree.py``` in nerdtree.bat
+- Add the path to ```tree.py``` in nerdtree.bat
 
 <h1>Examples:</h1>
 
