@@ -1,8 +1,16 @@
 # nerdtree_project
 directory structure layout using python
 
+Installation:
+```
+> git clone "https://github.com/cipherDOT/nerdtree_project"
+```
 
-nerdtree is a tool to show directory structure layout of a given directory
+<h1>Configuration</h1>
+
+- Add the nerdtree folder to the ```PATH``` variable under Environmental Variables.
+
+<h1>Examples:</h1>
 
 ```
 $ nerdtree C:/User/example
