@@ -18,7 +18,7 @@ $ git clone "https://github.com/cipherDOT/nerdtree_project"
 $ nerdtree -help 
 "-v : shows the current version of nerdtree
 
- -auth : shows the developers of nerdtree
+ -dev : shows the developers of nerdtree
  
  -help : help command
 ```
