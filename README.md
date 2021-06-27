@@ -13,6 +13,7 @@ $ git clone "https://github.com/cipherDOT/nerdtree_project"
 - Add the path to ```tree.py``` in nerdtree.bat
 
 <h1>Commands:</h1>
+
 ```
 $ nerdtree -v
 1.0.0
