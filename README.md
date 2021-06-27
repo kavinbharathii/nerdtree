@@ -1,7 +1,8 @@
 # nerdtree_project
 shell command to show the directory structure layout
 
-<h1>Installation</h1>:
+<h1>Installation</h1>
+
 ```
 $ git clone "https://github.com/cipherDOT/nerdtree_project"
 ```
