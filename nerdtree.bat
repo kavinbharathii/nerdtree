@@ -2,5 +2,5 @@
 
 set flag=%1
 
-python -u tree.py %flag%
+python -u "[path to tree.py]" %flag%
 
