@@ -1,19 +1,4 @@
 
-# todo:
-#
-#   [x] find the current path of the command entered
-#   [x] version 1:
-#       [x] print the cwd using the bat file(essentially cd command)
-#       [x] find all the files/folders in the directory and echo to the cmd
-#
-#   [ ] version 2:
-#       [x] make the recursive algorithm to find all directories and echo in the cmd
-#       [x] finish the program with flags so that it takes the flag as the parent directory
-#       [ ] make it a global command(accessible from any directory) => possibly by adding to path
-#
-#   [ ] version 3:
-#       [ ] release
-
 # --------------------------------------------imported libraries---------------------------------------------- #
 import sys
 import os
