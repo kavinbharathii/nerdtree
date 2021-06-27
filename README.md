@@ -4,7 +4,6 @@ directory structure layout using python
 Installation:
 ```
 $ git clone "https://github.com/cipherDOT/nerdtree_project"
-$ pip install -r requirements.txt
 ```
 
 <h1>Configuration</h1>
