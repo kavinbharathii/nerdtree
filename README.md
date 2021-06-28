@@ -5,23 +5,21 @@
 <h1>Installation:</h1>
 
 ```
-$ git clone "https://github.com/cipherDOT/nerdtree_project"
+$ git clone "https://github.com/cipherDOT/nerdtree"
 ```
 
 <h1>Configuration:</h1>
 
 - Add the nerdtree folder to the ```PATH``` variable under Environmental Variables.
-- Add the path to ```tree.py``` in nerdtree.bat
+- Add the path to ```setup.py``` in nerdtree.bat
 
 <h1>Commands:</h1>
 
 ```
-$ nerdtree -help 
-"-v : shows the current version of nerdtree
-
- -dev : shows the developers of nerdtree
- 
- -help : help command
+$ nerdtree --help 
+```
+```
+$ nerdtree -ls
 ```
 
 <h1>Examples:</h1>
