@@ -1,6 +1,6 @@
 # nerdtree_project
 
--cmd command in windows to show the directory structure layout-
+*cmd command in windows to show the directory structure layout*
 
 <h1>Installation:</h1>
 
