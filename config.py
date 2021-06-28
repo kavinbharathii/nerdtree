@@ -1,4 +1,26 @@
-version = "1.0.0"
+# configuration variables
+
+# current version
+version = "2.0.0"
+
+# current devs
 dev = "Kavin Bharathi - cipherDOT"
+
+# github page for the project
 web = "https://github.com/cipherDOT/nerdtree_project"
-help = "\n-v : shows the current version of nerdtree\n\n-dev : shows the developers of nerdtree\n\n-help : help command\n"
+
+# helping commands
+help_cmd = [
+    "-v    : shows the current version of nerdtree",
+    "-dev  : shows the developers of nerdtree",
+    "-help : help command",
+    "-ls   : list all directories without sub directories",
+]
+
+# usage commands
+use_cmd = [
+    "$ nerdtree            : shows the file structure in the current working directory",
+    "$ nerdtree -ls        : shows the file structure in cwd without the sub directories",
+    "$ nerdtree [path]     : shows the file structure in the given working directory",
+    "$ nerdtree [path] -ls : shows the file structure in given without the sub directories",
+]
