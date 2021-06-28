@@ -1,4 +1,4 @@
-# nerdtree_project
+# Nerdtree
 
 *cmd command in windows to show the directory structure layout*
 
