@@ -15,6 +15,7 @@ help_cmd = [
     "-dev  : shows the developers of nerdtree",
     "-help : help command",
     "-ls   : list all directories without sub directories",
+    "-web  : output the github repo for nerdtree project",
 ]
 
 # usage commands
