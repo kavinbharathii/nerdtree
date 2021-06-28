@@ -47,6 +47,6 @@ def hidden_nerdtree(path=os.getcwd()):
     for dir in dirs:
         print(f"=> {dir}")
     for fil in fils:
-        print(f"--{fil}")
+        print(f"-- {fil}")
 
 # ------------------------------------------------------------------------------------------------------------------ #
