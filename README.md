@@ -10,8 +10,8 @@ $ git clone "https://github.com/cipherDOT/nerdtree"
 
 <h1>Configuration:</h1>
 
+- Add the full path to ```setup.py``` in nerdtree.bat
 - Add the nerdtree folder to the ```PATH``` variable under Environmental Variables.
-- Add the path to ```setup.py``` in nerdtree.bat
 
 <h1>Commands:</h1>
 
