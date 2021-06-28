@@ -37,4 +37,4 @@ $ nerdtree
 
 <h1>The Result</h1>:
 
-![](images/nerdtree%20demo.png)
+![](images/nerdtree%20demo%202.png)
