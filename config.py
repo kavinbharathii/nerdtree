@@ -7,7 +7,7 @@ version = "2.1.0"
 dev = "Kavin Bharathi - cipherDOT"
 
 # github page for the project
-web = "https://github.com/cipherDOT/nerdtree_project"
+web = "https://github.com/cipherDOT/nerdtree"
 
 # helping commands
 help_cmd = [
