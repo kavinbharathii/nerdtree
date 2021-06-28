@@ -1,5 +1,5 @@
 
-# version 2.0.0:
+# version 2.1.0:
 #       [ ] nerdtree => with cleaner seperation
 #       [ ] added hidden tree functionality
 #       [ ] added new command ["-ls" => hidden tree]
