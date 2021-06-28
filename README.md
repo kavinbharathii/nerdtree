@@ -1,13 +1,13 @@
 # nerdtree_project
 shell command to show the directory structure layout
 
-<h1>Installation</h1>
+<h1>Installation:</h1>
 
 ```
 $ git clone "https://github.com/cipherDOT/nerdtree_project"
 ```
 
-<h1>Configuration</h1>
+<h1>Configuration:</h1>
 
 - Add the nerdtree folder to the ```PATH``` variable under Environmental Variables.
 - Add the path to ```tree.py``` in nerdtree.bat
@@ -35,6 +35,6 @@ Or, you can just enter nerdtree to show the directory layout of the current work
 $ nerdtree
 ```
 
-<h1>The Result</h1>:
+<h1>The Result:</h1>
 
 ![](images/nerdtree%20demo%202.png)
