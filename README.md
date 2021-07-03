@@ -16,10 +16,12 @@ $ git clone "https://github.com/cipherDOT/nerdtree"
 <h1>Commands:</h1>
 
 ```
-$ nerdtree --help 
-```
-```
-$ nerdtree -ls
+    "-v    : shows the current version of nerdtree",
+    "-dev  : shows the developers of nerdtree",
+    "-help : help command",
+    "-ls   : list all directories without sub directories",
+    "-web  : output the github repo for nerdtree project",
+    "-loc  : output the full path to the argument (file_name) if present in the cwd or in the dirs in cwd"
 ```
 
 <h1>Examples:</h1>
