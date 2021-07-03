@@ -1,15 +1,14 @@
 
-# version 2.1.0:
-#       [ ] nerdtree => with cleaner seperation
-#       [ ] added hidden tree functionality
-#       [ ] added new command ["-ls" => hidden tree]
-#       [ ] cleaner code structure
-#       [ ] added help functionality
+# version 2.2.0:
+#       [ ] added recursive locate command [see config and algos]
+
+# todo:
+#       [ ] make a commands file to organize the code
 
 # --------------------------------------------imported libraries---------------------------------------------- #
 import sys
 import os
-from algos import nerdtree, hidden_nerdtree
+from algos import locate, nerdtree, hidden_nerdtree
 from config import version, dev, web, help_cmd, use_cmd
 
 space = "    "
@@ -35,10 +34,13 @@ if arg_1 != None:
 
     if arg_2 != None:
 
-        # if "-la" is added with first argv, then we should take the path(argv[1]) and the hidden cmd(argv[2])
+        # if "-la" is added with first argv, then we should take the path(argv[1]) and the hide{-ls} cmd(argv[2])
         if arg_2 == '-ls':
             # hidden nerdtree with the given path
             hidden_nerdtree(arg_1)
+
+        if arg_1 == '-loc':
+            locate(arg_2)
     else:
         # -v - version
         if arg_1 == '-v':
@@ -48,7 +50,7 @@ if arg_1 != None:
         elif arg_1 == '-dev':
             print(f"{dev}")
 
-        # "-h" / "--help" - help menu
+        # "-h" / "--help" - help section
         elif arg_1 == "-h" or arg_1 == "--help":
             print("COMMANDS")
             for h in help_cmd:
@@ -65,6 +67,10 @@ if arg_1 != None:
         # hidden nerdtree with the cwd path
         elif arg_1 == "-ls":
             hidden_nerdtree()
+
+        # -loc without filename error handling
+        elif arg_1 == "-loc":
+            print("[ERROR] : give a name or a part of a name of a file to locate")
 
         # nerdtree runs at given location
         else:
