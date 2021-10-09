@@ -11,10 +11,10 @@ $ git clone "https://github.com/cipherDOT/nerdtree"
 ```
 
 Using GitHub:
-    - Go to the main page of the project
-    - Download the code as a .zip file
-    - extract the contents
-    - follow <b>Configuration</b>
+    [ ] Go to the main page of the project
+    [ ] Download the code as a .zip file
+    [ ] extract the contents
+    [ ] follow <b>Configuration</b>
 
 <h1>Configuration:</h1>
 
