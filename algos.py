@@ -105,7 +105,6 @@ def locate(file, path=os.getcwd()):
 
 def error_message(invalid_arg):
     print(f"'{invalid_arg}' : Invalid Command or Request")
-    print("Try using 'nerdtree -h' or 'nerdtree --help'")
-
+    print("Try using 'nerdtree -help'")
 
 # ------------------------------------------------------------------------------------------------------------------ #
