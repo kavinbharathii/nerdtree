@@ -45,7 +45,7 @@ def nerdtree(path=os.getcwd(), count=0):
     for fil in fils:
         print(f"{count * space}-- {fil}")
 
-# ---------------------------nerdtree hidden(-la) structure layout algorithm(non recursive-------------------------- #
+# ---------------------------nerdtree hidden(-la) structure layout algorithm(non recursive)-------------------------- #
 
 # the directory structure is given as:
 #       => dirs
@@ -99,6 +99,13 @@ def locate(file, path=os.getcwd()):
     elif len(results) >= 1:
         for r in results:
             print(f"{r}\n")
+
+
+# ------------------------------------------------------------------------------------------------------------------ #
+
+def error_message(invalid_arg):
+    print(f"'{invalid_arg}' : Invalid Command or Request")
+    print("Try using 'nerdtree -h' or 'nerdtree --help'")
 
 
 # ------------------------------------------------------------------------------------------------------------------ #
