@@ -17,8 +17,7 @@ help_cmd = [
     "-help : displays the commands necessary to work with nerdtree",
     "-ls   : list all directories without sub directories",
     "-web  : output the github repo for nerdtree project",
-    "-loc  : output the full path to the argument (file_name) if present in the cwd or in the dirs in cwd"
-    "-help : list all the usable commands when using nerdtree"
+    "-loc  : output the full path to the argument (file_name) if present in the cwd or in the dirs in cwd",
 ]
 
 # usage commands
