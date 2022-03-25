@@ -1,9 +1,8 @@
 
-# [ ] nerdtree
-# [ ] hidden nerdtree {"-ls" command}
-# [ ] locate          {"-loc" command}
+# [ ] nerdtree          {""  command}
+# [ ] branched nerdtree {"-el"  command}
+# [ ] locate            {"-loc" command}
 
-import sys
 import os
 
 space = "    "
@@ -20,7 +19,7 @@ space = "    "
 #       -- file.ext
 
 
-def nerdtree(path=os.getcwd(), count=0):
+def branched_nerdtree(path=os.getcwd(), count=0):
 
     # list of all the files and folders
     total_dirs = os.listdir(path)
@@ -38,7 +37,7 @@ def nerdtree(path=os.getcwd(), count=0):
 
         # recursive call to go into sub directories
         count += 1
-        nerdtree(dir_path, count)
+        branched_nerdtree(dir_path, count)
         count -= 1
 
     # file output
@@ -53,7 +52,7 @@ def nerdtree(path=os.getcwd(), count=0):
 #       -- file.ext
 
 
-def hidden_nerdtree(path=os.getcwd()):
+def nerdtree(path=os.getcwd()):
     # list of all the files and folders
     total_dirs = os.listdir(path)
 
@@ -103,8 +102,3 @@ def locate(file, path=os.getcwd()):
 
 # ------------------------------------------------------------------------------------------------------------------ #
 
-def error_message(invalid_arg):
-    print(f"'{invalid_arg}' : Invalid Command or Request")
-    print("Try using 'nerdtree -help'")
-
-# ------------------------------------------------------------------------------------------------------------------ #
