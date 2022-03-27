@@ -35,13 +35,13 @@ Using GitHub:
 <h1>Examples:</h1>
 
 ```
-$ nerdtree C:/User/example
+$ ntr C:/User/example
 ```
 
 Or, you can just enter nerdtree to show the directory layout of the current working directory
 
 ```
-$ nerdtree
+$ ntr
 ```
 
 <h1>The Result:</h1>
