@@ -22,10 +22,10 @@ help_cmd = [
 
 # usage commands
 use_cmd = [
-    "> nerdtree            : shows the file structure in the current working directory",
-    "> nerdtree -el        : shows the file structure in cwd with the sub directories",
-    "> nerdtree [path]     : shows the file structure in the given working directory",
-    "> nerdtree [path] -el : shows the file structure in given with the sub directories",
+    "> ntr            : shows the file structure in the current working directory",
+    "> ntr -el        : shows the file structure in cwd with the sub directories",
+    "> ntr [path]     : shows the file structure in the given working directory",
+    "> ntr [path] -el : shows the file structure in given with the sub directories",
 ]
 
 # logo
