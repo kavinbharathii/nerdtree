@@ -32,8 +32,15 @@ def branched_nerdtree(path=os.getcwd(), count=0):
 
     # directory output
     for dir in dirs:
+
+        # find the directory path
         dir_path = path + '/' + dir
         print(f"{count * space}=> {dir}")
+
+        # if the name of the directory is ".git" or "__pycache__", 
+        # (which usually holds unusable info) omit the dirs.
+        if dir == ".git" or dir == "__pycache__":
+            continue
 
         # recursive call to go into sub directories
         count += 1
@@ -52,7 +59,7 @@ def branched_nerdtree(path=os.getcwd(), count=0):
 #       -- file.ext
 
 
-def nerdtree(path=os.getcwd()):
+def nerdtree(path=os.getcwd(), space = ''):
     # list of all the files and folders
     total_dirs = os.listdir(path)
 
@@ -64,10 +71,10 @@ def nerdtree(path=os.getcwd()):
 
     # directory and file output
     for dir in dirs:
-        print(f"=> {dir}")
+        print(f"{space}=> {dir}")
 
     for fil in fils:
-        print(f"-- {fil}")
+        print(f"{space}-- {fil}")
 
 # ------------------------------------------------------------------------------------------------------------------ #
 
