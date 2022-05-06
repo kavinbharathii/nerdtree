@@ -1,7 +1,7 @@
 # configuration variables
 
 # current version
-version = "alpha 3.0.0"
+version = "alpha 3.5.0"
 
 # current devs
 dev = ["[developer]   == Kavin Bharathi {cipherDOT}",
