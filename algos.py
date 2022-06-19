@@ -84,27 +84,31 @@ def nerdtree(path=os.getcwd(), space = ''):
 
 def locate(file, path=os.getcwd()):
 
-    total_dirs = os.listdir(path)
-    dirs = [x for x in total_dirs if os.path.isdir(path + '/' + x)]
-    fils = [x for x in total_dirs if os.path.isfile(path + '/' + x)]
+    try:
+        total_dirs = os.listdir(path)
+        dirs = [x for x in total_dirs if os.path.isdir(path + '/' + x)]
+        fils = [x for x in total_dirs if os.path.isfile(path + '/' + x)]
 
-    # list to store all the file names found matching
-    results = []
-    for fil in fils:
-        if file in fil:
-            # rpath is to present the dile name cleaner without mismatching '/' and '\'
-            rpath = fr"{path}".replace("\\", "/")
-            results.append(f"[ ] {rpath}/{fil}")
+        # list to store all the file names found matching
+        results = []
+        for fil in fils:
+            if file in fil:
+                # rpath is to present the dile name cleaner without mismatching '/' and '\'
+                rpath = fr"{path}".replace("\\", "/")
+                results.append(f"[ ] {rpath}/{fil}")
 
-    # if no matching file names are found we go on to the next sub_directory
-    if len(results) == 0:
-        for dir in dirs:
-            dir_path = path + '/' + dir
-            locate(file, dir_path)
+        # if no matching file names are found we go on to the next sub_directory
+        if len(results) == 0:
+            for dir in dirs:
+                dir_path = path + '/' + dir
+                locate(file, dir_path)
 
-    elif len(results) >= 1:
-        for r in results:
-            print(f"{r}\n")
+        elif len(results) >= 1:
+            for r in results:
+                print(f"{r}\n")
+
+    except PermissionError:
+        pass
 
 
 # ------------------------------------------------------------------------------------------------------------------ #
