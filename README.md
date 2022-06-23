@@ -46,4 +46,4 @@ $ ntr
 
 <h1>The Result:</h1>
 
-![](images/nerdtree%20demo%202.png)
+![](images/ntrdemo.png)
