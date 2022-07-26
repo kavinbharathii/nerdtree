@@ -133,6 +133,6 @@ def filecopy(origin, target = None, path=os.getcwd()):
             copypath = path + '/' + newfilename
             shutil.copyfile(origin, copypath)
         except:
-            
+            pass
 # ------------------------------------------------------------------------------------------------------------------ #
 
