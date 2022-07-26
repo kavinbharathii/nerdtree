@@ -1,17 +1,17 @@
 
-# version 2.2.0:
-#       [ ] added recursive locate command [see config and algos]
+# version 3.6.0:
+#       [ ] added 'cp' for copy pasting files from the terminal
 
 # todo:
 #       [ ] make a commands file to organize the code
 
 # --------------------------------------------imported libraries---------------------------------------------- #
+from ast import arg
 import sys
-import os
-from algos import locate, nerdtree, branched_nerdtree
+from algos import locate, nerdtree, branched_nerdtree, filecopy
 from config import version, dev, web, help_cmd, use_cmd, logo
 
-space = "    "
+space = 4 * " "
 
 # --------------------------------getting the sys argument to provide the path-------------------------------- #
 
@@ -20,6 +20,13 @@ try:
 
     try:
         arg_2 = str(sys.argv[2])
+
+        try:
+            arg_3 = str(sys.argv[3])
+
+        except Exception:
+            arg_3 = None
+
     except Exception:
         arg_2 = None
 
@@ -30,9 +37,8 @@ except Exception:
 # ------------------------------executing the nerdtree function to output the tree------------------------------ #
 
 
-if arg_1 != None:
-
-    if arg_2 != None:
+if arg_1:
+    if arg_2:
 
         # if "-la" is added with first argv, then we should take the path(argv[1]) and the branch{-el} cmd(argv[2])
         if arg_2 == '-el':
@@ -41,6 +47,12 @@ if arg_1 != None:
 
         if arg_1 == '-loc':
             locate(arg_2)
+
+        if arg_1 == 'cp':
+            if arg_3:
+                filecopy(arg_2, arg_3)
+            else:
+                filecopy(arg_2)
     else:
         # -v - version
         if arg_1 == '-v':
@@ -76,6 +88,9 @@ if arg_1 != None:
         # -loc without filename error handling
         elif arg_1 == "-loc":
             print("[ERROR] : give a name or a part of a name of a file to locate")
+
+        elif arg_1 == "cp":
+            print("Give a valid file name")
 
         # nerdtree runs at given location
         else:
