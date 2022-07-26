@@ -4,8 +4,9 @@
 # [ ] locate            {"-loc" command}
 
 import os
+import shutil 
 
-space = "    "
+space = 4 * " "
 
 # ----------------------------recursive algorithm to output the directory structure---------------------------- #
 
@@ -109,7 +110,29 @@ def locate(file, path=os.getcwd()):
 
     except PermissionError:
         pass
+    
 
+# ------------------------------------------------------------------------------------------------------------------ #
 
+def filecopy(origin, target = None, path=os.getcwd()):
+    if target:
+        if origin in os.listdir(path):
+            origin = f"{path}/" + origin.split('/')[-1]
+            target = f"{path}/" + target.split('/')[-1]
+            shutil.copyfile(origin, target)
+            print(f"[file {origin} copied to {target}]")
+        else:
+            try:
+                shutil.copyfile(origin, target)
+            except:
+                print("[Error in 'target but not origin in path']")
+    else:
+        try:
+            copyfilelist = origin.split(".")
+            newfilename = "".join(copyfilelist[:-1]) + '_copy.' + copyfilelist[-1]
+            copypath = path + '/' + newfilename
+            shutil.copyfile(origin, copypath)
+        except:
+            
 # ------------------------------------------------------------------------------------------------------------------ #
 
