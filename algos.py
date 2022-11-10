@@ -7,6 +7,7 @@ import os
 import shutil 
 
 space = 4 * " "
+FORBIDDEN_DIRS = ["node_modules", "__pycache__", ".git", ".vscode"]
 
 # ----------------------------recursive algorithm to output the directory structure---------------------------- #
 
@@ -40,7 +41,7 @@ def branched_nerdtree(path=os.getcwd(), count=0):
 
         # if the name of the directory is ".git" or "__pycache__", 
         # (which usually holds unusable info) omit the dirs.
-        if dir == ".git" or dir == "__pycache__":
+        if dir in FORBIDDEN_DIRS:
             continue
 
         # recursive call to go into sub directories
