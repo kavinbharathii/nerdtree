@@ -1,20 +1,20 @@
 # configuration variables
 
 # current version
-version = "alpha 3.5.0"
+version = "version 3.5.0"
 
 # current devs
-dev = ["[developer]   == Kavin Bharathi {cipherDOT}",
-        "[github page] == https://github.com/cipherDOT"]
+dev = ["[developer]   == Kavin Bharathi {kavinbharathii}",
+        "[github repo] == https://github.com/kavinbharathii"]
 
 # github page for the project
-web = "https://github.com/cipherDOT/nerdtree"
+web = "https://github.com/kavinbharathii/nerdtree"
 
 # helping commands
 help_cmd = [
     "-v    : shows the current version of nerdtree",
     "-dev  : shows the developers of nerdtree",
-    "-h : displays the commands necessary to work with nerdtree",
+    "-h    : displays the commands necessary to work with nerdtree",
     "-el   : list all directories with sub directories",
     "-web  : output the github repo for nerdtree project",
     "-loc  : output the full path to the argument (file_name) if present in the cwd or in the dirs in cwd"
