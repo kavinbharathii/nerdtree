@@ -7,7 +7,7 @@
 
 Using git tool:
 ```
-$ git clone "https://github.com/cipherDOT/nerdtree"
+$ git clone "https://github.com/kavinbharathii/nerdtree"
 ```
 
 Using GitHub:
