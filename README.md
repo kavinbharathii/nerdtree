@@ -30,7 +30,7 @@ Using GitHub:
 -el   : list all directories with sub directories
 -web  : output the github repo for nerdtree project
 -loc  : output the full path to the argument (file_name) if present in the cwd or in the dirs in cwd
--cp   : copy a contents of a file to a new file if specified the name. Else it creates {original_name}_copy file
+-cp   : copy a file to new file if name is specified. Else it creates {original_name}_copy file.
 ```
 
 <h1>Examples:</h1>
