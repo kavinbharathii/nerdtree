@@ -1,7 +1,7 @@
 # configuration variables
 
 # current version
-version = "version 3.5.0"
+version = "version 3.5.1"
 
 # current devs
 dev = ["[developer]   == Kavin Bharathi {kavinbharathii}",
@@ -17,7 +17,8 @@ help_cmd = [
     "-h    : displays the commands necessary to work with nerdtree",
     "-el   : list all directories with sub directories",
     "-web  : output the github repo for nerdtree project",
-    "-loc  : output the full path to the argument (file_name) if present in the cwd or in the dirs in cwd"
+    "-loc  : output the full path to the argument (file_name) if present in the cwd or in the dirs in cwd",
+    "-cp   : copy a contents of a file to a new file if specified the name. Else it creates {original_name}_copy file"
 ]
 
 # usage commands
