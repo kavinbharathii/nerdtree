@@ -5,9 +5,10 @@
 
 import os
 import shutil 
+from pathlib import Path
 
 space = 4 * " "
-FORBIDDEN_DIRS = ["node_modules", "__pycache__", ".git", ".vscode"]
+FORBIDDEN_DIRS = ["node_modules", "__pycache__", ".git", ".vscode", "venv", "target"]
 
 # ----------------------------recursive algorithm to output the directory structure---------------------------- #
 
@@ -25,6 +26,7 @@ def branched_nerdtree(path=os.getcwd(), count=0):
 
     # list of all the files and folders
     total_dirs = os.listdir(path)
+    total_dirs.sort(key = lambda x: os.path.getctime(path + '/' + x))
 
     # filtering only the directories
     dirs = [x for x in total_dirs if os.path.isdir(path + '/' + x)]
@@ -39,7 +41,7 @@ def branched_nerdtree(path=os.getcwd(), count=0):
         dir_path = path + '/' + dir
         print(f"{count * space}=> {dir}")
 
-        # if the name of the directory is ".git" or "__pycache__", 
+        # if the name of the directory is in FORBIDDEN_DIRS 
         # (which usually holds unusable info) omit the dirs.
         if dir in FORBIDDEN_DIRS:
             continue
@@ -64,6 +66,7 @@ def branched_nerdtree(path=os.getcwd(), count=0):
 def nerdtree(path=os.getcwd(), space = ''):
     # list of all the files and folders
     total_dirs = os.listdir(path)
+    total_dirs.sort(key = lambda x: os.path.getctime(x))
 
     # filtering only the directories
     dirs = [x for x in total_dirs if os.path.isdir(path + '/' + x)]
@@ -136,4 +139,3 @@ def filecopy(origin, target = None, path=os.getcwd()):
         except:
             pass
 # ------------------------------------------------------------------------------------------------------------------ #
-
