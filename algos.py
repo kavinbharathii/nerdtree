@@ -26,7 +26,6 @@ def branched_nerdtree(path=os.getcwd(), count=0):
 
     # list of all the files and folders
     total_dirs = os.listdir(path)
-    total_dirs.sort(key = lambda x: os.path.getctime(path + '/' + x))
 
     # filtering only the directories
     dirs = [x for x in total_dirs if os.path.isdir(path + '/' + x)]
@@ -66,7 +65,6 @@ def branched_nerdtree(path=os.getcwd(), count=0):
 def nerdtree(path=os.getcwd(), space = ''):
     # list of all the files and folders
     total_dirs = os.listdir(path)
-    total_dirs.sort(key = lambda x: os.path.getctime(x))
 
     # filtering only the directories
     dirs = [x for x in total_dirs if os.path.isdir(path + '/' + x)]
