@@ -8,7 +8,7 @@ import shutil
 from pathlib import Path
 
 space = 4 * " "
-FORBIDDEN_DIRS = ["node_modules", "__pycache__", ".git", ".vscode", "venv", "target"]
+FORBIDDEN_DIRS = ["node_modules", "__pycache__", ".git", ".vscode", "venv", "target", "webpack"]
 
 # ----------------------------recursive algorithm to output the directory structure---------------------------- #
 
