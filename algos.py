@@ -8,7 +8,7 @@ import shutil
 from pathlib import Path
 
 space = 4 * " "
-FORBIDDEN_DIRS = ["node_modules", "__pycache__", ".git", ".vscode", "venv", "target", "webpack"]
+FORBIDDEN_DIRS = ["node_modules", "__pycache__", "venv", "target", "webpack", "prisma"]
 
 # ----------------------------recursive algorithm to output the directory structure---------------------------- #
 
@@ -42,7 +42,8 @@ def branched_nerdtree(path=os.getcwd(), count=0):
 
         # if the name of the directory is in FORBIDDEN_DIRS 
         # (which usually holds unusable info) omit the dirs.
-        if dir in FORBIDDEN_DIRS:
+        # or of the direcotry name starts with an ".", skip it
+        if dir in FORBIDDEN_DIRS or dir[0] == ".":
             continue
 
         # recursive call to go into sub directories
@@ -85,7 +86,7 @@ def nerdtree(path=os.getcwd(), space = ''):
 #       [ ] full/path/to/file.name
 
 
-def locate(file, path=os.getcwd()):
+def locate(path_name, path=os.getcwd()):
 
     try:
         total_dirs = os.listdir(path)
@@ -95,16 +96,22 @@ def locate(file, path=os.getcwd()):
         # list to store all the file names found matching
         results = []
         for fil in fils:
-            if file in fil:
+            if path_name in fil:
                 # rpath is to present the dile name cleaner without mismatching '/' and '\'
                 rpath = fr"{path}".replace("\\", "/")
                 results.append(f"[ ] {rpath}/{fil}")
+
+        for dir in dirs:
+            if path_name in dir:
+                # rpath is to present the dile name cleaner without mismatching '/' and '\'
+                rpath = fr"{path}".replace("\\", "/")
+                results.append(f"[ ] {rpath}/{dir}")
 
         # if no matching file names are found we go on to the next sub_directory
         if len(results) == 0:
             for dir in dirs:
                 dir_path = path + '/' + dir
-                locate(file, dir_path)
+                locate(path_name, dir_path)
 
         elif len(results) >= 1:
             for r in results:
